@@ -1,7 +1,7 @@
-            - name: jenkins-job-start
+  name: Jenkins Job Trigger
   # You may pin to the exact commit or the version.
-  # uses: abdul-at/jenkinsjob@c7d55d55a39394c7c6cda7f3296f7be304394956
-  uses: abdul-at/jenkinsjob@v1.0.0
+  # uses: estherk0/jenkins-trigger@70ee28b6020e5894782308052ae4bba253256823
+  uses: estherk0/jenkins-trigger@1.0
   with:
     # Jenkins full URL including http/https protocol
     url: http://54.167.164.84:8080
@@ -13,8 +13,6 @@
     job_name: GitHubTrigger
     # Job parameter in JSON format. ex) {"param1":"value1"} 
     parameter: # optional
-    # Additional headers to include in the HTTP requests in JSON format. ex) {"param1":"value1"} 
-    headers: # optional
     # Waiting for job completion or not
     wait: # optional, default is true
     # Timeout (seconds) for github action. Set 600s as default
