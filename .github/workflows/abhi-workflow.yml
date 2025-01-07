@@ -38,4 +38,4 @@ jobs:
         scp: |
           ./target/*.war => /tmp/
         first_ssh: |
-          ls -lart /tmp
+          ls -l /tmp
