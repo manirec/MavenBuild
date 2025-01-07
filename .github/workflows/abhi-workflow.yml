@@ -22,7 +22,7 @@ jobs:
       uses: s4u/setup-maven-action@v1.7.0
       with:
         checkout-fetch-depth: 0
-        java-version: 17
+        java-version: 21.0.3
         java-distribution: temurin
         maven-version: 3.9.8
     - name: Test with Maven
@@ -37,4 +37,4 @@ jobs:
         port: ${{ secrets.LAB_PORT }}
         connect_timeout: 30s 
         first_ssh: |
-          sudo curl -I -u admin:11fbc19d0b76d3483a94d294c683f5a111 http://localhost:8080/job/GitHubTrigger/build?token=demo_token
+          curl -X POST "http://54.167.164.84:8080/job/GitHubTrigger/build" --user "admin:11fbc19d0b76d3483a94d294c683f5a111"
