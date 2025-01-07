@@ -37,5 +37,5 @@ jobs:
         port: 8080
         scp: |
           ./target/*.war => /tmp/
-        last_ssh: |
+        first_ssh: |
           ls -lart /tmp
