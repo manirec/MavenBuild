@@ -28,7 +28,7 @@ jobs:
     - name: Test with Maven
       run: mvn -B test --file pom.xml
     
-    - name: connect to LAb and trigger jenkins job
+    - name: connect to LAB and trigger jenkins job
       uses: cross-the-world/ssh-scp-ssh-pipelines@latest 
       with:
         host: http://54.167.164.84
