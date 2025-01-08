@@ -9,7 +9,7 @@ jobs:
     - name: trigger single job
       uses: appleboy/jenkins-action@master
       with:
-        url: ${{ secrets.LAB_HOSTNAME }}
+        url: "http://52.91.82.181:8080"
         user: ${{ secrets.LAB_USERNAME }}
         token: ${{ secrets.TOKEN }}
         job: "GitHubTrigger"
