@@ -1,4 +1,4 @@
-name: Trigger Jenkins job again
+name: Trigger Jenkins job
 on: [push]
 jobs:
 
